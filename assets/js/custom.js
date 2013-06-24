@@ -110,6 +110,13 @@ $(fitWindow);
 
 		
 // Add your own		
+    // Hide content until the page is fully loaded
+    $(document).ready(function() {
+        $(window).load(function() {
+          // When the page has loaded
+          $("body").fadeTo("slow", 1);
+        });
+    });
 		
 		
 		

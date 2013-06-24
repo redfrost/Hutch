@@ -1,71 +1,253 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Hutch by redfrost</title>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Hutch</h1>
-        <p>Damian</p>
+<!--
+|~)[~|~\|~|~)/~\(~~|~
+|~\[_|_/|~|~\\_/_) | 
+When you look into an abyss, the abyss also looks into you. 
+-->   
+     
+    	<!-- Site info -->      
+        <title>Hutch</title>   
+        <meta property="og:site_name" content="Hutch">
+        <meta property="og:description" name="description" content="Simple and intuitive website slideshow">
+        <meta property="og:image" content="assets/img/thumbnail.png">
+        <!-- <meta property="fb:app_id" content="" /> -->
+        <meta property="og:type" content="website">
+        <meta name="author" content="Redfrost">
+        <meta name="designer" content="Redfrost">        
+        <meta name="dcterms.rightsHolder" content="Redfrost">
+		<meta name="keywords" content="">    
+        
+		<!-- Icons -->
+		<link rel="apple-touch-icon-precomposed" href="assets/img/apple-touch-icon.png">
+				
+		<!-- Scripts -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><!-- Old Browser Support -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/custom.js"></script>
+		
+		<!-- Style -->
+		<link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css">
 
-        <p class="view"><a href="https://github.com/redfrost/Hutch">View the Project on GitHub <small>redfrost/Hutch</small></a></p>
+        <!-- Typekit -->
+        <script type="text/javascript" src="//use.typekit.net/mng3caa.js"></script>
+	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+                
+		<!-- Mobile View -->     
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/responsive-addon.css">
+        
+    </head>
 
 
-        <ul>
-          <li><a href="https://github.com/redfrost/Hutch/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/redfrost/Hutch/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/redfrost/Hutch">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+    <!-- Body starts -->
+    <body id="top" class="responsive" data-spy="scroll">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+	<div id="master-wrap">
+	
+		<!-- Header -->
+       		        <header class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+                    <!-- Logo Image -->                
+                    <a class="brand logo-image" href="#">
+                    <img alt="Hutch" src="assets/img/logo.png" style="max-width:150px;">
+                    </a>
+                        
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+                    <!-- Navigation -->
+                    <nav class="nav-collapse collapse">
+                        <ul class="nav">
+	                        <li class="active"><a href="#top">Home</a></li>
+                            <li class=""><a href="#slide1">Slide1</a></li>
+                            <li class=""><a href="#slide2">Slide2</a></li>                                                                               
+                            <li class=""><a href="#slide3">Slide3</a></li> 
+                            <li class=""><a href="#slide4">Slide4</a></li>
+                            <li class=""><a href="#slide5">Slide5</a></li>                            
+                        </ul>
+                    </nav><!--/.nav-collapse -->
+                
+                </div>
+            </div>
+        </header><!-- /.navbar -->
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+		<!-- Content -->
+		
+		<!-- Main hero unit for a primary marketing message or call to action -->
+        <section id="hero" class="hero-unit jumbotron masthead">
+    <div class="container-fluid">           
+		<div class="row-fluid"> 
+			<div class="span12">  
+	            <h1>Simple <span class="lighter">&amp; Intuitive</span></h1>
+	            <p class="light">Minimalistic web-based slideshow</p>
+	            <p><a class="btn btn-info btn-large next" href="#slide1">Start</a></p>
+	        </div>    
+        </div>     
+    </div>    	
+</section>	
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+        <div id="main-content">
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+		
+		<section id="slide1">
+		    <div class="container-fluid">
+		    <div class="row-fluid">
+		
+				<div class="span12">
+				<h1>Simple <span class="lighter">&amp; Intuitive</span></h1>
+	            <p class="light">Minimalistic web-based slideshow</p>
+	            <p><a class="btn btn-info btn-large next" href="#slide2">Next</a></p>
+				</div>							
+					
+		    </div>
+		    </div>
+		</section>			
+					
+		<section id="slide2">
+			<div class="container-fluid">
+			<div class="row-fluid">
+		
+				<div class="span12">
+				<h1>Simple <span class="lighter">&amp; Intuitive</span></h1>
+	            <p class="light">Minimalistic web-based slideshow</p>
+	            <p><a class="btn btn-info btn-large next" href="#slide3">Next</a></p>
+				</div>							
+					
+			</div>
+			</div>
+		</section>			
+		
+		<section id="slide3">
+			<div class="container-fluid">
+			<div class="row-fluid">
+		
+				<div class="span12">
+				<h1>Simple <span class="lighter">&amp; Intuitive</span></h1>
+	            <p class="light">Minimalistic web-based slideshow</p>
+	            <p><a class="btn btn-info btn-large next" href="#slide4">Next</a></p>
+				</div>							
+					
+			</div>
+			</div>
+		</section>			
+		
+		<section id="slide4">
+			<div class="container-fluid">
+			<div class="row-fluid">
+		
+				<div class="span12">
+				<h1>Simple <span class="lighter">&amp; Intuitive</span></h1>
+	            <p class="light">Minimalistic web-based slideshow</p>
+	            <p><a class="btn btn-info btn-large next" href="#slide5">Next</a></p>
+				</div>							
+					
+			</div>
+			</div>
+		</section>							  
+  
+		<section id="slide5">
+			<div class="container-fluid">
+			<div class="row-fluid">
+		
+				<div class="span12">
+				<h1>Simple <span class="lighter">&amp; Intuitive</span></h1>
+	            <p class="light">Minimalistic web-based slideshow</p>
+	            <p><a class="btn btn-info btn-large next" href="#home">To Top</a></p>
+				</div>							
+					
+			</div>
+			</div>
+		</section>		
+  
+  
+        </div> <!-- /#main-content-->   
+        
+        
+        <!-- Footer -->
+                <footer id="footer">          
+          <div class="container-fluid">
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+	  		<!-- Footer menu -->
+	  		<div class="footer_menu">
+      			<ul class="footer_menu_box">
+      			  	<li><a href="https://github.com/redfrost/Hutch">Download</a></li>
+                    <li><a data-original-title="Copyright © 2013 Redfrost" onmouseover="this.style.cursor='pointer'" rel="popover" data-placement="top" data-content="Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/redfrost">redfrost</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE." title="">License</a></li>
+
+      			  	
+<li><a data-original-title="V0.1" onmouseover="this.style.cursor='pointer'" rel="tooltip" data-placement="top" title="">Version</a></li>
+      			  	                    
+      			  	                    
+      			</ul>
+      		</div>
+
+	  		<!-- SNS Links -->
+      		<div class="sns_icons">
+      			<ul class="sns_icons_box">
+      				<li><a class="sns-link1" href="#"><i class="icon-facebook"></i></a></li>
+      				<li><a class="sns-link2" href="#"><i class="icon-twitter"></i></a></li>
+      				<li><a class="sns-link3" href="#"><i class="icon-github"></i></a></li>
+      				<li><a class="sns-link4" href="#"><i class="icon-home"></i></a></li>
+				</ul>
+			</div>
+
+		  <div class="copyright_box">
+	          <p class="copyright">© 2013 Hutch</p>
+	          <p class="maker">Redfrost Design</p>
+      	  </div>
+          
+          <p class="back_top"><a href="#top"><i class="icon-arrow-up"></i> Back To Top</a></p>
+          
+      </div>
+        </footer><!-- /#footer -->
+        
+	</div><!-- /#master-wrap-->
+
+    <div class="bg"></div><!-- BG for iPad -->     
+	<div class="iosfix"></div><!-- Scroll with fixed menu fix -->
+	
+	
+	
+	    <!-- Modal Popup - Insert your code -->
+
+
+
+        <!-- Plugins -->
+        <script type="text/javascript" src="assets/plugin/smooth-scroll.js"></script><!-- Smooth Scroll -->
+        <script type="text/javascript" src="assets/plugin/wufoo.js"></script><!-- Form control -->
+    	<script type="text/javascript" src="assets/plugin/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    	<script type="text/javascript" src="assets/plugin/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    	<link rel="stylesheet" type="text/css" href="assets/plugin/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+
+
+		<!-- Analytics -->            
+        <script>
+            var _gaq=[['_setAccount',''],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>              
     
-  </body>
+</body>
 </html>

@@ -1,0 +1,794 @@
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700,800); */
+
+/*  *****************************************************************************
+	* BASIC STYLES																*
+    *****************************************************************************	
+		1. GLOBAL SETING
+		2. BACKGROUND
+		3. ANIMATION
+		4. TYPOGRAPHY
+		5. HEADER
+		6. CONTENT
+		7. FOOTER
+		8. LINKS & BUTTONS
+		9. LIST & TABLE 
+		10. FORMS & COMMENT
+		11. MODULES
+	    12. FIX
+	    13. ADDITIONAL
+ */
+
+
+
+/* =============================================================================
+   1. GLOBAL SETING
+   ============================================================================= */
+
+/* Link */
+a {
+    color: #0088CC;
+    text-decoration: none;
+    }
+    a:hover, a:focus {
+        color: #005580;
+        text-decoration: none !important;
+	    }
+        /* Remove Firefox selection dot */
+        a, a:focus, a:active, a:hover, object, embed { outline: none; }
+        :-moz-any-link:focus { outline: none; }
+        input::-moz-focus-inner { border: 0; }
+        :focus { outline: 0; }
+	
+	
+del { color: #ccc;}
+
+.fade_hover { opacity: 1; }
+.fade_hover:hover { opacity: 0.8; }
+.fade_hover img   { background: #fff; } /* Firefox opacity jog fix */
+
+
+
+/* Line */
+hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 30px 0 20px; height: 0; }
+
+
+/* Image */
+a img { border: none; }
+img { max-width: 100%; height:auto; -ms-interpolation-mode: bicubic; }
+
+
+/* SELECTED TEXT */
+::selection { background: #ff5e99; color: #FFFFFF; }
+::-moz-selection { background: #ff5e99; color: #FFFFFF; }
+
+
+/* Position */
+.left { float: left; } 
+.right { float: right; } 
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+.text-center, .text-centre { text-align: center; }
+.hide        { display: none; }
+.highlight   { background: #ff0; }
+div { word-wrap:break-word;}
+
+
+/* clearfloat */
+.clear, .clearfloat {
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+
+
+
+
+
+/* =============================================================================
+   2. BACKGROUND
+   ============================================================================= */
+
+html { 
+  background:; 
+  background-image:url();
+  background-attachment:;
+  } 
+body {
+    margin:auto;
+    }
+body.static {  
+	padding-top: ; 
+	min-width: 1025px; /* Set this to fix div bg-cutoff issue */
+	}
+
+#wrap {
+    padding-bottom: 60px;
+}
+
+@media (min-width: 1025px) {  /* must set to min 1025 to fix layout in iPad 1024 resolution */
+body { 
+    background-image:url();
+    background-color:;
+    background-repeat:;
+    background-position:;
+    background-attachment:;
+    margin:;
+    min-width:;
+    max-width:;
+    padding:;
+    
+    box-shadow:;
+    -moz-box-shadow:;
+    -webkit-box-shadow:;
+    }
+}  
+
+
+
+
+/* =============================================================================
+   3. ANIMATION
+   ============================================================================= */
+
+/* Normal Fade Animation */
+.animation {
+  -webkit-transition: all 300ms cubic-bezier(0.485, 0.000, 0.250, 1.000);
+   	 -moz-transition: all 300ms cubic-bezier(0.485, 0.000, 0.250, 1.000);
+      -ms-transition: all 300ms cubic-bezier(0.485, 0.000, 0.250, 1.000);
+       -o-transition: all 300ms cubic-bezier(0.485, 0.000, 0.250, 1.000);
+          transition: all 300ms cubic-bezier(0.485, 0.000, 0.250, 1.000);
+
+		 /* -webkit-transform: translate3d(0, 0, 0); Webkit Hardware Acceleration*/ 
+	     -webkit-backface-visibility: hidden; /* Safari Flicker Fix #2 */
+	     -webkit-transform: translateZ(0);
+	}
+
+
+/* Fast  Fade Animation */
+.animation-fast, .brand, .fade_hover, .nav li a, #footer li a { 
+  -webkit-transition: all 200ms ease;
+	 -moz-transition: all 200ms ease;
+	  -ms-transition: all 200ms ease;
+	   -o-transition: all 200ms ease;
+	      transition: all 200ms ease; 
+	
+		 /* -webkit-transform: translate3d(0, 0, 0); Webkit Hardware Acceleration*/ 
+	     -webkit-backface-visibility: hidden; /* Safari Flicker Fix #2 */
+	     -webkit-transform: translateZ(0);
+	}
+
+
+
+
+
+
+
+
+/* =============================================================================
+   4. TYPOGRAPHY
+   ============================================================================= */
+   
+body { 
+    font-family: "proxima-nova", "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    /* -webkit-font-smoothing: antialiased; better for dark background */
+    }
+    h1, h2, h3, h4, h5, h6, .btn, .navbar, .brand { font-family: "proxima-nova", "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+
+
+/* Font Size */
+body { font-size: 18px; font-size: 1.13rem; }
+h1 { font-size: 48px; font-size: 3rem; font-weight: bold; }
+h2 { font-size: 38px; font-size: 2.38rem; font-weight: bold; }
+h3 { font-size: 24px; font-size: 1.5rem; font-weight: bold; }
+h4 { font-size: 18px; font-size: 1.13rem; font-weight: bold; }
+h5 { font-size: 14px; font-size: 0.88rem; font-weight: normal; color: #888; }
+h6 { font-size: 12px; font-size: 0.75rem; font-weight: normal; color: #888; }
+p  {
+    font-size: 16px; font-size: 1rem;
+    line-height:24rem;line-height:1.5rem;
+    margin-bottom: 20px; margin-bottom: 1.25rem;
+    vertical-align: bottom;
+    word-break: normal;
+    word-wrap: break-word;
+	text-align: ;
+}
+
+
+#wrap a, #wrap a:hover, #wrap a:active {
+	text-decoration: none; 
+}
+
+blockquote p {
+    color: #999999;
+    font-size: 18px; font-size: 1.13rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+
+.light { font-weight: 300; }
+.lighter { font-weight: 100; }
+small { color: #888; }
+   
+
+
+
+/* =============================================================================
+   5. HEADER
+   ========================================================================== */
+/* Logo */
+.navbar .brand {
+    color: #666666;
+    font-size: 32px; font-size: 2rem;
+    font-weight: 200;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.navbar .logo-image {
+    padding: 6px 20px;
+}
+
+
+/* Description */
+
+
+/* Navigation */
+.navbar-inner {
+    background-color: #304353;
+    background-image: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0;
+    min-height: 40px;
+    padding: 20px 20px;
+}
+.navbar-fixed-top {
+    opacity: 0.96;
+    top: 0;
+}
+.navbar .nav > li > a {
+    color: #aaa;
+    float: none;
+    margin: 0 5px;
+    padding: 8px 10px;
+    text-shadow: none;
+}
+
+.navbar .nav {
+    float: right;
+}
+.nav > li > a {
+    display: block;
+    font-size: 17px; font-size: 1.06rem;
+}
+
+/* Indicator */
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    background-color: transparent;
+    border-bottom: 4px solid #57b16f;
+    color: #fff;
+    box-shadow: none;
+    text-decoration: none;
+}
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    color: #fff;
+} 
+
+
+/* ==========================================================================
+   6. CONTENT
+   ========================================================================== */
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+    box-shadow: none;
+    border-width: 0;
+}   	
+   	
+section { text-align: center; }   	
+#hero   { background: #d4c493; }   	
+#slide1 { background: #2c486b; }
+#slide2 { background: #fbb41c; }
+#slide3 { background: #57b16f; }
+#slide4 { background: #dc4444; }
+#slide5 { background: #23ab96; }
+   	
+   	
+body { padding-top: 0px; } 
+        
+#main-content { padding-bottom: 0px; }
+section { padding:; }
+
+.byline {
+    color: #999999;
+    font-size: 24px !important; font-size: 1.5rem !important;
+    font-weight: 100;
+    margin: 0px 0 26px;
+    line-height: 1.8rem;
+}
+
+body { color: #888; }	
+h2, h3, h4 { color: #000000; }
+
+#contact h2, #about h2 {
+    font-size: 48px; font-size: 3rem;
+    line-height: 48px; line-height: 3rem;
+    font-weight: 300;
+}
+
+#contact h2:before, #about h2:before { 
+	content: ">"; 
+	width: 10px; 
+	height: 28px; 
+	background: #f43456; 
+	float: left; 
+	display: inline-block; 
+	text-indent: -9999px; 
+	margin-left: -20px; 
+	}
+
+
+
+/* Hero section */
+.hero-unit {
+    background-color: #37A3D6;
+    background-image: url("../img/home-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF;
+    line-height: 30px;
+    margin-bottom: 0px;
+    padding: 0; 
+}
+
+	/* For Retina Display */
+	@media all and (-webkit-min-device-pixel-ratio: 2) {
+	  .hero-unit {
+		}
+	}
+	
+section h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 5;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 12px;
+    margin-top: 160px;
+    letter-spacing: -4px !important;
+}
+	
+section p {
+    font-size: 22px;font-size: 1.38rem;
+    line-height: 26px;line-height: 1.63rem;
+    color: #fff;
+}   
+
+@media (min-width: 1025px) {
+    section h1 {
+        margin-top: 260px;
+    }
+    section p {
+        margin-bottom: 20px;
+    }        
+}
+
+
+
+/* About section */
+.tick_box .icon-ok:before {
+    color: #89C01B;
+}
+.tick_box {
+    margin: 0 0 20px;
+    padding: 0;
+    text-align: left;
+}
+.tick_box li {
+	list-style: none;
+    font-size: 20px; font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 32px; line-height: 2rem;
+}
+
+
+
+/* Service section */
+#services h2 {
+    font-size: 30px; font-size: 1.88rem;
+    font-weight: 100;
+}
+
+ 
+      
+   
+/* Pricing section */   
+.pricelist {
+    text-align: center;
+    border: 5px solid #DDDDDD !important;
+    border-radius: 0px !important;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+.pricelist.bestseller {  
+    border: 8px solid #304353 !important;
+    background: #fff;
+-webkit-transform: scale(1.15);
+   -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+     -o-transform: scale(1.15);        
+        transform: scale(1.15);
+     -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.15, M12=0, M21=0, M22=1.15, SizingMethod='auto expand')";
+
+   /* IE6 and 7 */ 
+   filter: progid:DXImageTransform.Microsoft.Matrix(
+            M11=1.15,
+            M12=0,
+            M21=0,
+            M22=1.15,
+        SizingMethod='auto expand');
+}
+
+
+
+/* Team section */
+.team-list {
+    text-align: center;
+    margin: 0 0 10px;
+}
+.team-list li { 
+    float:; 
+    display: inline-block; 
+    margin: 15px;
+}
+
+.team-list li a {
+    display: block;
+    height: 120px;
+    width: 120px;
+}
+
+.team-list img {
+    width: 120px;
+    border-radius: 60px 60px 60px 60px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Location */
+.contact_box { 
+    background: #f9f9f9; 
+    padding: 20px 0; 
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+}
+
+
+.well {
+    background: #f7f7f7;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+   
+   
+   
+   
+   
+/* ==========================================================================
+   7. FOOTER
+   ========================================================================== */
+
+footer {
+    background: #304353;
+    border-top: 0px solid #DDDDDD;
+    color: #fff;
+    padding: 14px 0 50px;
+    }
+    footer a:hover { opacity: 0.6; }
+	
+
+
+/* Footer menu */
+.footer_menu {
+    float: left;
+    font-size: 18px; font-size: 1.125rem;
+    width: 70%;
+    }
+    .footer_menu_box { 
+	    margin: 0; 
+	    }
+        .footer_menu_box li { 
+	        list-style: none; 
+	        display: inline-block; 
+	        }
+            .footer_menu_box li a { 
+	            color: #fff;
+	            text-transform: uppercase; 
+	            margin-right: 10px; 
+	            }
+
+
+/* Copyright */
+.copyright_box {
+    line-height: 1rem;
+    }
+    .copyright {
+    	float: left;
+    	margin: 14px 0;
+        }
+
+/* Production */
+.maker {
+    border-left: 1px solid #ccc;
+    float: left;
+    padding-left: 6px;
+    width: 200px;
+    margin: 14px 0 0 6px;
+    }
+
+/* Scroll to Top Button */
+.back_top { 
+	width: 200px; 
+	float:right; 
+	text-align: right; 
+	margin: 14px 0;
+	}
+    .back_top a {
+	    color: #fff;
+    }
+
+/* SNS Links */
+.sns_icons { 
+	width: 30%; 
+	float: left; 
+	}
+    .sns_icons_box { float: right; }
+    .sns_icons_box li {
+         display: inline-block;
+         line-height: 20px;
+         list-style: none outside none;
+         padding: 0 2px;
+        }
+        .sns_icons_box li a {
+            color: #fff;
+            font-size: 32px; font-size: 2rem;
+            }
+
+
+.sns-link1:hover { color: #355192 !important; }
+.sns-link2:hover  { color: #3BBDE8 !important; }
+.sns-link3:hover    { color: #1AB7EA !important; }
+.sns-link4:hover           { color: #FFAE5B !important; }
+
+   
+
+/* =============================================================================
+   8. LINKS & BUTTONS
+   ============================================================================= */
+.btn { 
+font-weight: 600; 
+border-radius: 0;
+border: 0;
+text-shadow: none;
+background-image: none;
+}
+
+
+
+
+
+
+/* =============================================================================
+   9. LIST & TABLE
+   ============================================================================= */
+
+
+
+
+
+/* =============================================================================
+   10. FORMS
+   ============================================================================= */
+#contact_form textarea {
+     width: 90%;
+}
+
+#contact_form li {
+     list-style: none outside none;
+}
+
+
+
+
+
+
+
+/* =============================================================================
+   11. MODULES
+   ============================================================================= */
+.bannerImage img { width: 100%; }
+
+/* TOOLTIP */
+.tooltip {
+  font-size: 15px; font-size: 0.94rem;
+  line-height: 20px; line-height: 1.25rem;
+}
+
+.tooltip-inner { /* space inside tooltip */
+  max-width: 200px;
+  padding: 10px 14px;
+  -webkit-border-radius:0px;
+  -moz-border-radius: 	0px;
+  border-radius: 	0px;
+}
+
+/* Popover */
+.popover {
+    max-width: 90%;
+}
+
+/* CAROUSEL */
+#myCarousel { box-shadow: 0px 2px 5px rgba(0,0,0,0.3); }
+
+.banner #myCarousel-auto .item, 
+.banner #myCarousel .item {
+	height: 560px;
+	background: #000;
+}
+.carousel-caption.page_banner_textbox .link_view { float: right; margin-top: -55px; }
+
+
+.banner #myCarousel-auto .page_banner_textbox, 
+.banner #myCarousel .page_banner_textbox {
+	background: rgba(47,51,55, 0.9);
+    border-top: 1px solid #555555;
+    color: #EEEEEE;
+    display: inline-block;
+    height: 132px;
+    margin-top: -113px;
+    padding: 10px 20px 30px;
+    position: absolute;
+    top: 500px;
+}
+
+@media (min-width: 1025px){ 
+.banner #myCarousel-auto .page_banner_textbox, 
+.banner #myCarousel .page_banner_textbox { background: rgba(47,51,55, 0.9); }
+}
+
+
+/* Carousel Fade */
+.carousel.carousel-fade .item {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.carousel.carousel-fade .carousel-control { z-index: 3; }​
+.carousel.carousel-fade .next,
+.carousel.carousel-fade .prev {
+  left: 0;
+  z-index: 1;
+}
+
+/* Carousel Control */
+.carousel-control {
+    top: 50%;
+    font-size: 48px;
+    background: none !important;
+    border: 0px !important;
+} 
+
+.carousel-indicators {
+    top: inherit !important;
+    right: inherit !important;
+    bottom: -20px !important; 
+    margin-left: 47% !important;    
+}
+
+.carousel-indicators li {
+    background: #999;
+    width: 10px;
+    height: 10px;
+    border-radius: 6px 6px 6px 6px;
+    border: 1px solid #FFFFFF;
+}
+
+
+@media (min-width: 1025px) { 
+    .carousel-control, .control-box {
+     -webkit-transition: all 250ms ease;
+	 -moz-transition: all 250ms ease;
+	  -ms-transition: all 250ms ease;
+	   -o-transition: all 250ms ease;
+	      transition: all 250ms ease; 
+	  /* Assigning animation to indicator li will make the slides flicker */    
+      /* hardware acceleration will cause Bootstrap carousel controlbox margin error in webkit browsers */
+    }
+    #myCarousel .control-box { opacity: 0; }
+    #myCarousel:hover .control-box { opacity: 1; }
+    .carousel-control.left { left: 0; background-image: none;}
+    .carousel-control.right { right: 0; background-image: none; }
+    #myCarousel:hover .carousel-control.left { left: 20px; }
+    #myCarousel:hover .carousel-control.right { right: 20px; }    
+}
+
+
+
+
+
+/* =============================================================================
+   12. FIX
+   ============================================================================= */
+/* IE Flicker fix */
+html { filter: expression(document.execCommand("BackgroundImageCache", false, true)); }
+
+/* Thumbnails box margin left fix */
+.thumbnails { margin-left: 0; } 
+
+/* Bootstrap Fix Lines on Button (Retina) */
+.btn:hover { background-position: ; }
+
+/* Responsive Google Map */
+.map iframe { width: 100% !important; }
+
+
+
+/* =============================================================================
+   13. ADDITIONAL STYLE
+   ============================================================================= */
+
+.row-fluid {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.dropcap {
+    color: #000000;
+    float: left;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1em;
+    padding-left: 0;
+    padding-right: 8px;
+    padding-top: 0;
+}
+
+
+
+/* Tablet Menu fix */
+@media (max-width: 1024px) {
+	.navbar-fixed-top, .navbar-fixed-bottom {
+    position: relative;
+	}
+	body {
+    padding-top: 0px;
+	}
+}
+
+
+/* Copyright box */
+.footer_menu_box .popover {
+    width: 400px;
+}
+
+.footer_menu_box .popover-content {
+    font-size: 0.63rem;
+    line-height: 1rem;
+}
+
+
+

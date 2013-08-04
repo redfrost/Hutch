@@ -526,7 +526,7 @@ footer {
 
 /* Production */
 .maker {
-    border-left: 1px solid #CCCCCC;
+    border-left: 1px solid #fff;
     float: left;
     line-height: 1;
     margin: 18px 0 0 6px;

@@ -20,8 +20,8 @@
         width: 100% !important;
         }
      .back-top {
-        text-align: center;
-        width: 100%;
+        text-align: center !important;
+        width: 100% !important;
         }   
 	}
 	

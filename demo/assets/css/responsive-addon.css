@@ -19,10 +19,6 @@
         text-align: center;
         width: 100% !important;
         }
-     .back-top {
-        text-align: center !important;
-        width: 100% !important;
-        }   
 	}
 	
 	@media (min-width: 768px) and (max-width: 979px) {
@@ -36,10 +32,12 @@
 
 	@media (max-width: 767px) {	  
 	.hero-unit, .slides {
-	    margin: 0 -20px;
-	    padding: 20px !important;
-	    width: 100% !important;
-		}
+        margin: 0 -20px !important;
+        }
+	    .hero-unit .container-fluid, 
+	    .slides .container-fluid {
+            padding: 20px !important;
+	    }
 	}
 	
     @media (max-width: 1024px) {
@@ -113,6 +111,15 @@
 	    margin: 40px 0 0 !important;
 	    text-align: center !important;
 	    width: 100% !important;
+		}
+		.back-top a {
+		    background:;
+		    border: 4px solid #FFFFFF;
+		    border-radius:0;
+		    color: #FFFFFF !important;
+		    padding: 10px 20px;
+		    box-shadow: 0 1px 2px #BBBBBB;
+		}
 	}
 	
 

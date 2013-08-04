@@ -57,3 +57,18 @@ footer {
     footer a {
         color: #000000 !important;
         }
+        
+        
+        
+/* HEADER */
+	@media (max-width: 979px) {	  
+     .back-top {
+        text-align: center !important;
+        width: 100% !important;
+        }   
+	}        
+	
+.back-top a {
+    border: 0 !important;
+    box-shadow: none !important;
+    }	

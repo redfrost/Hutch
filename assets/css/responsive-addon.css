@@ -32,10 +32,12 @@
 
 	@media (max-width: 767px) {	  
 	.hero-unit, .slides {
-	    margin: 0 -20px;
-	    padding: 20px !important;
-	    width: 100% !important;
-		}
+        margin: 0 -20px !important;
+        }
+	    .hero-unit .container-fluid, 
+	    .slides .container-fluid {
+            padding: 20px !important;
+	    }
 	}
 	
     @media (max-width: 1024px) {
@@ -119,7 +121,6 @@
 		    box-shadow: 0 1px 2px #BBBBBB;
 		}
 	}
-	
 	
 
 

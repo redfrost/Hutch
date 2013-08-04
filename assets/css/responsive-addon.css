@@ -15,6 +15,10 @@
 	.navbar .btn-navbar {
         display: none;
         }
+     .navbar .brand {
+        text-align: center;
+        width: 100% !important;
+        }
 	}
 	
 	@media (min-width: 768px) and (max-width: 979px) {

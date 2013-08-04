@@ -60,15 +60,18 @@ footer {
         
         
         
-/* HEADER */
+/* Back to top */
+.back-top {
+    width: 0 !important;
+    }	
+    .back-top a {
+        border: 0 !important;
+        box-shadow: none !important;
+        }	
+    
 	@media (max-width: 979px) {	  
      .back-top {
         text-align: center !important;
         width: 100% !important;
         }   
-	}        
-	
-.back-top a {
-    border: 0 !important;
-    box-shadow: none !important;
-    }	
+	}      

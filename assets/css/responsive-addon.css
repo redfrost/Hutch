@@ -12,22 +12,34 @@
 /* HEADER */
 	@media (max-width: 979px) {	  
 	.navbar .nav { float: none !important; }
+	.navbar .btn-navbar {
+        display: none;
+        }
 	}
 	
 	@media (min-width: 768px) and (max-width: 979px) {
-	  .navbar-fixed-top {
+	.navbar-fixed-top {
 	    margin-bottom: 0px;
 	    }
+    .navbar .brand {
+        padding-left: 0 !important;
+        }
     }
 
 	@media (max-width: 767px) {	  
-	.hero-unit {
-	    margin: -20px;
+	.hero-unit, .slides {
+	    margin: 0 -20px;
 	    padding: 20px !important;
+	    width: 100% !important;
 		}
 	}
 	
-
+    @media (max-width: 1024px) {
+	.navbar-fixed-top {
+	    position: absolute;
+	    margin: 0;
+	    }	
+    }
       
    
 /* FOOTER */
@@ -95,9 +107,9 @@
 	    width: 100% !important;
 		}
 		.back_top a {
-		    background: none repeat scroll 0 0 #999999;
+		    background:;
 		    border: 4px solid #FFFFFF;
-		    border-radius: 30px 30px 30px 30px;
+		    border-radius:0;
 		    color: #FFFFFF !important;
 		    padding: 10px 20px;
 		    box-shadow: 0 1px 2px #BBBBBB;

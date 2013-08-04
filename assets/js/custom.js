@@ -1,4 +1,14 @@
-// Resize sections
+// Preloader - Hide content until the page is fully loaded
+    $(document).ready(function() {
+        $(window).load(function() {
+          // When the page has loaded
+            $("#preloader").fadeOut(); // fade out preloader   
+            $("#master-wrap").fadeTo("slow", 1); // fade in content
+	    });
+    });
+		
+		
+		// Resize sections
 function fitWindow() {
     var width = $(window).width();
     var height = $(window).height();
@@ -110,15 +120,5 @@ $(fitWindow);
 
 		
 // Add your own		
-    // Hide content until the page is fully loaded
-    $(document).ready(function() {
-        $(window).load(function() {
-          // When the page has loaded
-          $("body").fadeTo("slow", 1);
-        });
-    });
-		
-		
-		
-		
+
 		

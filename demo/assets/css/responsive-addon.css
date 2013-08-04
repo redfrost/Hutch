@@ -100,13 +100,13 @@
 		}
 		
 	
-	.back-top {
+	.back_top {
 	    float: none !important;
 	    margin: 40px 0 0 !important;
 	    text-align: center !important;
 	    width: 100% !important;
 		}
-		.back-top a {
+		.back_top a {
 		    background:;
 		    border: 4px solid #FFFFFF;
 		    border-radius:0;

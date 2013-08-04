@@ -1,5 +1,6 @@
 /* IMPORT */   
 @import url("custom.css");
+@import url("animate.css");
 
 /*  *****************************************************************************
 	* BASIC STYLES																*
@@ -147,7 +148,7 @@ body {
 
 
 /* Fast  Fade Animation */
-.animation-fast, .brand, .fade_hover, .nav li a, #footer li a, .back-top a { 
+.animation-fast, .brand, .fade_hover, .nav li a, #footer li a, .back-top { 
   -webkit-transition: all 200ms ease;
 	 -moz-transition: all 200ms ease;
 	  -ms-transition: all 200ms ease;
@@ -541,9 +542,11 @@ footer {
 	text-align: right; 
 	margin: 14px 0;   
 	}
-    .back_top a {
-	    color: #fff;
-    }
+    .back-top, 
+    .back-top:hover, 
+    .back-top:focus {
+        color: #fff;
+        }
 
 
 

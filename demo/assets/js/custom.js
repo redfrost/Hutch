@@ -108,5 +108,6 @@ function fitWindow() {
 
 		
 // Add your own		
-
-		
+$(document).ready(function() {
+    $('.text-box').addClass('animated fadeInLeft');
+});		

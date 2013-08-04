@@ -1,0 +1,59 @@
+/* Add your own */
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700,800); */
+@import url(http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911);
+
+.goudy { font-family: 'Goudy Bookletter 1911', serif; font-weight: normal; }
+.slides { background-size: cover !important; }
+
+#hero   { background-image: url(../img/slide-00.jpg) !important; }
+#slide1 { background-image: url(../img/slide-01.jpg) !important; }
+#slide2 { background-image: url(../img/slide-02.jpg) !important; }
+#slide3 { background-image: url(../img/slide-03.jpg) !important; }
+#slide4 { background-image: url(../img/slide-04.jpg) !important; }
+#slide5 { background-image: url(../img/slide-05.jpg) !important; }
+
+.text-box {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    margin: -30px auto 0;
+    padding: 10px 0px;
+    width: 280px;
+    border-bottom: 4px solid #49AFCD;
+}
+
+.navbar .brand {
+    color: #FFFFFF !important;
+    font-size: 2rem;
+    font-weight: 200;
+    text-shadow: none !important;
+}
+
+
+.navbar-inner {
+    background-color: #000 !important;
+}
+
+.navbar-fixed-bottom {
+    border-top: 3px solid #666666;
+    margin-top: 0 !important;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    border-bottom: 4px solid #49AFCD !important;
+}
+
+
+.back-top {
+    float: left !important;
+    margin: 7px 0 !important;
+    text-align: left !important;
+    width: 200px;
+    font-size: 1rem !important;
+    }
+    .back-top a { color: #fff !important; }
+    
+footer {
+    background: #ffd200 !important;
+    }    
+    footer a {
+        color: #000000 !important;
+        }

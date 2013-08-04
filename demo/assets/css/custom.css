@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911);
 
 .goudy { font-family: 'Goudy Bookletter 1911', serif; font-weight: normal; }
-.slides { background-size: cover !important; }
+.slides { background-size: cover !important; background-position: center top !important; }
 
 #hero   { background-image: url(../img/slide-00.jpg) !important; }
 #slide1 { background-image: url(../img/slide-01.jpg) !important; }

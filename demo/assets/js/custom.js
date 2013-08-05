@@ -4,6 +4,7 @@
 }, 1000);
 
 
+
 // Preloader - Hide content until the page is fully loaded
     $(document).ready(function() {
         $(window).load(function() {
@@ -114,6 +115,19 @@ function fitWindow() {
 
 		
 // Add your own		
-$(document).ready(function() {
-    $('.text-box').addClass('animated fadeInLeft');
-});		
+
+
+// Mobile app open link internally
+    $( document ).on(
+        "click","a", function( event ){
+         
+        // Stop the default behavior of the browser, which
+        // is to change the URL of the page.
+        event.preventDefault();
+         
+        // Manually change the location of the page to stay in
+        // "Standalone" mode and change the URL at the same time.
+        location.href = $( event.target ).attr( "href" );
+         
+        }
+    );

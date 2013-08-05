@@ -45,7 +45,7 @@
 	.navbar-fixed-top,
 	.navbar-fixed-bottom {
 	    position: ;
-	    margin: 0 -20px;
+	    margin-bottom: 0;
 	    top: 0;
 	    }	
     }

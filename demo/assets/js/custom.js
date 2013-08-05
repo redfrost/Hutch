@@ -119,7 +119,7 @@ function fitWindow() {
 
 // Mobile app open link internally
     $( document ).on(
-        "click","a", function( event ){
+        "click","#footer a", function( event ){
          
         // Stop the default behavior of the browser, which
         // is to change the URL of the page.
@@ -131,3 +131,5 @@ function fitWindow() {
          
         }
     );
+    
+    

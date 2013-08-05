@@ -119,7 +119,7 @@ function fitWindow() {
 
 // Mobile app open link internally
     $( document ).on(
-        "click",".link-external a", function( event ){
+        "click","a.link-external", function( event ){
          
         // Stop the default behavior of the browser, which
         // is to change the URL of the page.

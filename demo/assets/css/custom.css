@@ -75,3 +75,10 @@ footer {
         width: 100% !important;
         }   
 	}      
+	
+	
+    @media (max-width: 767px) {	 
+    	html {
+                font-size: 62.5% !important;
+            }
+    }

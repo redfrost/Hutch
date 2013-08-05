@@ -18,6 +18,7 @@
      .navbar .brand {
         text-align: center;
         width: 100% !important;
+        margin: 0 -20px !important;
         }
 	}
 	
@@ -36,14 +37,16 @@
         }
 	    .hero-unit .container-fluid, 
 	    .slides .container-fluid {
-            padding: 20px !important;
+        padding: 20px !important;
 	    }
 	}
 	
     @media (max-width: 1024px) {
-	.navbar-fixed-top {
-	    position: absolute;
-	    margin: 0;
+	.navbar-fixed-top,
+	.navbar-fixed-bottom {
+	    position: ;
+	    margin: 0 -20px;
+	    top: 0;
 	    }	
     }
       
@@ -120,6 +123,12 @@
 		    padding: 10px 20px;
 		    box-shadow: 0 1px 2px #BBBBBB;
 		}
+		
+		
+        html {
+            font-size: 62.5% !important;
+        }
+		
 	}
 	
 
@@ -166,5 +175,3 @@
 	width: 100%;
 	height: 100%;
 }
-
-

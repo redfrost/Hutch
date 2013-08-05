@@ -18,6 +18,7 @@
      .navbar .brand {
         text-align: center;
         width: 100% !important;
+        margin: 0 -20px !important;
         }
 	}
 	
@@ -43,8 +44,9 @@
     @media (max-width: 1024px) {
 	.navbar-fixed-top,
 	.navbar-fixed-bottom {
-	    position: absolute;
-	    margin: 0;
+	    position: ;
+	    margin: 0 -20px;
+	    top: 0;
 	    }	
     }
       

@@ -345,7 +345,14 @@ h2, h3, h4 { color: #000000; }
     line-height: 30px;
     margin-bottom: 0px;
     padding: 0; 
-}
+    }
+    .hero-unit h1 {
+        color: inherit;
+        font-size: 60px;font-size: 3.75rem;
+        letter-spacing: -1px;
+        line-height: 1;
+        margin-bottom: 0;
+        }
 
 	/* For Retina Display */
 	@media all and (-webkit-min-device-pixel-ratio: 2) {
@@ -355,7 +362,7 @@ h2, h3, h4 { color: #000000; }
 	
 section h1 {
     color: white;
-    font-size: 60px;
+    font-size: 60px;font-size:3.75rem;
     font-weight: 5;
     letter-spacing: -1px;
     line-height: 1;
@@ -696,7 +703,7 @@ background-image: none;
 /* Carousel Control */
 .carousel-control {
     top: 50%;
-    font-size: 48px;
+    font-size: 48px;font-size: 3rem;
     background: none !important;
     border: 0px !important;
 } 
@@ -785,7 +792,7 @@ html { filter: expression(document.execCommand("BackgroundImageCache", false, tr
 .dropcap {
     color: #000000;
     float: left;
-    font-size: 3em;
+    font-size: 48px;font-size: 3em;
     font-weight: bold;
     line-height: 1em;
     padding-left: 0;
@@ -813,7 +820,7 @@ html { filter: expression(document.execCommand("BackgroundImageCache", false, tr
 
 .footer_menu_box .popover-content {
     color: #888888;
-    font-size: 0.63rem;
+    font-size: 10px;font-size: 0.63rem;
     line-height: 1.5;
 }
 

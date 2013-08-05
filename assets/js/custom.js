@@ -1,3 +1,10 @@
+// iPhone pull addressbar
+/mobile/i.test(navigator.userAgent) && !window.location.hash && setTimeout(function () {
+  window.scrollTo(0, 1);
+}, 1000);
+
+
+
 // Preloader - Hide content until the page is fully loaded
     $(document).ready(function() {
         $(window).load(function() {

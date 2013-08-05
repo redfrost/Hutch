@@ -19,6 +19,7 @@
         text-align: center;
         width: 100% !important;
         margin: 0 -20px !important;
+        padding-left: 20px;
         }
 	}
 	
@@ -26,9 +27,6 @@
 	.navbar-fixed-top {
 	    margin-bottom: 0px;
 	    }
-    .navbar .brand {
-        padding-left: 0 !important;
-        }
     }
 
 	@media (max-width: 767px) {	  
@@ -37,7 +35,7 @@
         }
 	    .hero-unit .container-fluid, 
 	    .slides .container-fluid {
-        padding: 20px !important;
+            padding: 20px !important;
 	    }
 	}
 	
@@ -123,12 +121,6 @@
 		    padding: 10px 20px;
 		    box-shadow: 0 1px 2px #BBBBBB;
 		}
-		
-		
-        html {
-            font-size: 62.5% !important;
-        }
-		
 	}
 	
 
@@ -175,3 +167,5 @@
 	width: 100%;
 	height: 100%;
 }
+
+

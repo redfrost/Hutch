@@ -36,7 +36,18 @@ When you look into an abyss, the abyss also looks into you.
 	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
                 
 		<!-- Mobile View -->     
-        <meta name="viewport" content="width=device-width">
+        <meta id="dynamicViewport" name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+        window.onload = function () {
+        	if (screen.width < 767) {
+        		var mvp = document.getElementById('dynamicViewport');
+        		mvp.setAttribute('content','width=device-width, initial-scale=0.5');
+        	}
+        }
+        </script>
+        
+        
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="assets/css/responsive-addon.css">
         

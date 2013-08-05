@@ -3,3 +3,9 @@
 @import url(http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911);
 
 .goudy { font-family: 'Goudy Bookletter 1911', serif; font-weight: normal; }
+    
+@media (max-width: 767px) {	 
+    html {
+        font-size: 62.5% !important;
+        }
+    }

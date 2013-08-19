@@ -749,6 +749,13 @@ background-image: none;
 /* =============================================================================
    12. FIX
    ============================================================================= */
+/* Safari fix flicker bug fix */
+.slides, #footer  {
+ /* -webkit-transform: translate3d(0, 0, 0); Hardware acceleration */
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
 /* IE Flicker fix */
 html { filter: expression(document.execCommand("BackgroundImageCache", false, true)); }
 

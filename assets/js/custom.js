@@ -4,7 +4,6 @@
 }, 1000);
 
 
-
 // Preloader - Hide content until the page is fully loaded
     $(document).ready(function() {
         $(window).load(function() {

@@ -151,6 +151,7 @@
 */
 
 /* Responsive Video	*/
+.video-box, 
 .entry-content-asset {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -159,7 +160,12 @@
 	overflow: hidden;
 }
 
-.entry-content-asset embed, .entry-content-asset object, .entry-content-asset iframe 
+.video-box embed, 
+.video-box object, 
+.video-box iframe, 
+.entry-content-asset embed, 
+.entry-content-asset object, 
+.entry-content-asset iframe 
  {
 	position: absolute;
 	top: 0;
@@ -167,5 +173,3 @@
 	width: 100%;
 	height: 100%;
 }
-
-
